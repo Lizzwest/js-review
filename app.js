@@ -122,3 +122,38 @@ console.log(headerTwo);
 //take away a class
 headerTwo.classList.remove ("sub-title");
 console.log(headerTwo)
+
+//this function changes the value of headerTwo to my name when it is clicked
+headerTwo.addEventListener("click", function(){
+    headerTwo.textContent = "Lizz";
+});
+
+const headerThree = document.createElement("h2");
+headerThree.textContent = "Friends";
+container.appendChild(headerThree);
+console.log(headerThree);
+
+
+const list = document.createElement("ul");
+
+//iterate through my firends array
+for(let i = 0; i < friends.length; i++){
+    let eachFriend = friends[i];
+    const listItem = document.createElement("li");
+    listItem.textContent = eachFriend;
+    list.appendChild(listItem);
+
+}
+
+console.log(list);
+
+headerThree.addEventListener("click", function(){
+    container.appendChild(list);
+});
+
+
+
+//reference each friend
+//create a li
+//add textContent to that li
+//append that to a ul(unordered list)

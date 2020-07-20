@@ -58,3 +58,25 @@ headerTwo.classList.remove ("sub-title");
 console.log(headerTwo)
 
 ```
+
+### More DOM Manipulation
+
+```javascript
+//iterate through my firends array
+for(let i = 0; i < friends.length; i++){
+    let eachFriend = friends[i];
+    //create an element 
+    const listItem = document.createElement("li");
+   //added text to the element
+    listItem.textContent = eachFriend;
+    //append iten to list
+    list.appendChild(listItem);
+
+}
+
+console.log(list);
+//listening for a click
+headerThree.addEventListener("click", function(){
+    container.appendChild(list);
+});
+```
