@@ -149,7 +149,7 @@ function evenCaps(sentence) {
                 
                 //for loop to iterate through indices in the length of the result
                 //and an if statement to see if the value is even (or if divisible by 2 result is 0)
-                
+
                     for (let l = 0; l < result[m].length; l++) {
                     if (m % 2 == 0) {
                     //charAt is character at, so the below code is looking for characters at index l
@@ -166,3 +166,21 @@ function evenCaps(sentence) {
   
                 console.log(evenCaps('Apple bottom jeans, boots with the fur'))
 
+
+
+                //More examples
+                //an attempt at writing a function to return snacks that match in an array
+                //but I keep getting undefined
+                function gimmeSnacks(snacks){
+                    let string = ["yogurt", "rice pudding", "peanut butter and apples"]
+                    for(let i = 0; i<= string.length, i++;)
+                    {
+                        if(snacks === string.length[i]){
+                            return string[i];
+   
+                        }else{
+                            return false;
+                        }
+                    }   
+                   }
+                   console.log(gimmeSnacks(["yogurt, broccoli"]));
