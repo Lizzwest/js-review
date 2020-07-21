@@ -157,3 +157,54 @@ headerThree.addEventListener("click", function(){
 //create a li
 //add textContent to that li
 //append that to a ul(unordered list)
+
+
+//problem solving
+//what i start with
+//what i hope to end up with
+//understand the problem
+//where issues start
+//break it down into manageable problems
+
+//fizzBuzz
+//write a function that does the following
+    //takes in an array
+    //check each number in the array
+    //if the number is divisible by 5 and 3 === fizzbuzz
+    //if number divisible by 3 === fizz
+    //if number divisible by 5 === buzz
+
+    //for example:
+    //[3,5,15,20,9,7]
+    //["fizz", "Buzz", "FizzBuzz", "buzz", "fizz", 7]
+
+
+    //i need to set up an empty array
+    //iterate through rr that going to be passed
+    //check remainder
+    //push result of each elelment inside the result array
+    //return result array
+
+    function fizzBuzz(array){
+        let result = [];
+
+        for(let i = 0; i < array.length; i++){
+            let num = array[i];
+            console.log(num)
+
+            if(num % 3 === 0 && num % 5 === 0){
+                result.push("Fizzbuzz");
+            } else if(num % 3 === 0){
+                result.push("fizz");
+            }else if(num % 5 === 0){
+                result.push("buzz");
+            }else{
+                result.push(num);
+        }
+        return result;
+
+    
+    }
+    console.log(fizzBuzz([3,5,15,20,9,7]));
+    }
+
